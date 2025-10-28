@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func HashCode(dec string) string {
 	size := len(dec)
 	result := make([]byte, size)
@@ -13,12 +11,4 @@ func HashCode(dec string) string {
 		result[i] = byte(hashchar)
 	}
 	return string(result)
-}
-func main() {
-	// Example input
-	input := "hello123"
-	hashed := HashCode(input)
-
-	fmt.Println("Original:", input)
-	fmt.Println("Hashed:  ", hashed)
 }
