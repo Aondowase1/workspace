@@ -1,16 +1,18 @@
-package 
+package main
 
-func PrintFish(s string, n int) {
+func FishAndChips(n int) string {
 	if n < 0 {
-		Print("error")
+		return "errors"
 	}
-    if n%2 == 0 && n%3 ==  0 {
-		Print("fish and chips")
+	if n%2 == 0 && n%3 == 0 {
+		return "fish and chips"
 	}
-    if n%2 == 0 {
-		Print("fish")
+	if n%2 == 0 {
+		return "fish"
 	}
-    if n%3 == 0 {
-		Print("chips")
+	if n%3 == 0 {
+		return "chips"
 	}
+	return ""
+
 }
